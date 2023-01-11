@@ -1,7 +1,11 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
+<<<<<<< HEAD
 const nuevaString = "Hola, que tal?";
+=======
+const nuevaString = "Hola, soy joaquin";
+>>>>>>> fd4fdc22bcf8e8805ea827f8d8d50ee218798569
 
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 27;
@@ -27,7 +31,11 @@ const nuevoModulo = 21 % 5 === 1;
 
 function devolverString(str) {
   // "Return" la string provista: str
+<<<<<<< HEAD
   // Tu código:
+=======
+  // Tu código: 
+>>>>>>> fd4fdc22bcf8e8805ea827f8d8d50ee218798569
   return str;
 }
 
@@ -60,7 +68,11 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
+<<<<<<< HEAD
   if (x = y){
+=======
+  if (x === y) {
+>>>>>>> fd4fdc22bcf8e8805ea827f8d8d50ee218798569
     return true;
   }
   else {
@@ -72,14 +84,23 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if (str1.length === str2.length) {
+    return true;
+  }
+  else {
+    return false;
+  }
 }
 
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
+<<<<<<< HEAD
   if (num < 90) {
+=======
+  if (num < 90){
+>>>>>>> fd4fdc22bcf8e8805ea827f8d8d50ee218798569
     return true;
   }
   else {
@@ -91,7 +112,11 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
+<<<<<<< HEAD
   if (num > 50) {
+=======
+  if (num > 50){
+>>>>>>> fd4fdc22bcf8e8805ea827f8d8d50ee218798569
     return true;
   }
   else {
@@ -121,7 +146,11 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
+<<<<<<< HEAD
   if (num % 1 === 0) {
+=======
+  if (num % 2 === 1){
+>>>>>>> fd4fdc22bcf8e8805ea827f8d8d50ee218798569
     return true;
   }
   else {
@@ -174,10 +203,17 @@ function esPositivo(numero) {
   if (numero > 0) {
     return "Es positivo";
   }
+<<<<<<< HEAD
   else if (numero < 0) {
     return "Es negativo";
   }
   else (numero === 0); {
+=======
+  else if (numero < 0){
+    return "Es negativo";
+  }
+  else (numero === 0) {
+>>>>>>> fd4fdc22bcf8e8805ea827f8d8d50ee218798569
     return false;
   }
 }
@@ -186,14 +222,22 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+<<<<<<< HEAD
   return str + "!!";
+=======
+  return str + " !";
+>>>>>>> fd4fdc22bcf8e8805ea827f8d8d50ee218798569
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
+<<<<<<< HEAD
   return "nombre" + " apellido";
+=======
+  return 
+>>>>>>> fd4fdc22bcf8e8805ea827f8d8d50ee218798569
 }
 
 function obtenerSaludo(nombre) {

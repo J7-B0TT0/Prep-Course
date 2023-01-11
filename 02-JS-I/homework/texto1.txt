@@ -1,0 +1,32 @@
+1- Variable: una variable, es algo que definimos y le otorgamos un valor para que se guarde en la memoria del programa.
+
+se escribe:
+
+var nombreDeLaVariable = valorDeLaVariable
+
+2- Strings: Es una cadena de texto, se escribe entre "".
+
+3- Funciones: Son objetos y sirven para expresar y aplicar las distintas variables contenidas dentro de esta funcion. Se escriben de la siguiente manera
+
+function nombreDeLaFuncion() {} 
+
+4- El return nos sirve para devolvernos algo. Asi sea la suma de dos numero o cualquier otra operacion matematica.
+
+5- El control de flujo sirve para controlar y verificar que algo sea verdadero (true) o falso (false).
+Para lograr esto, usamos el operador "if".
+Por ejemplo
+
+function aptoParaJugar(edad) {
+    if (edad > 18) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+aptoParaJugar(25);//true
+
+6- Los valores booleanos (true - false) se utilizan para devolver un valor siempre y cuando se cumpla o no, una condicion.
+Nos devuelven un valor, si se cumple o no un requisito.
+
