@@ -49,13 +49,13 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
-  if (idioma = 'Aleman') {
+  if (idioma === 'Aleman') {
     return 'Guten Tag!';
   }
-  else if (idioma = 'Mandarin') {
+  else if (idioma === 'Mandarin') {
     return 'Ni Hao!';
   }
-  else if (idioma = 'Ingles') {
+  else if (idioma === 'Ingles') {
     return 'Hello!';
   }
   else undefined ;{
@@ -88,7 +88,7 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (numero = 10 || 5) {
+  if (numero === 10 || numero === 5) {
     return true;
   }
   else {
@@ -116,7 +116,6 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-
 }
 
 function fizzBuzz(numero) {
