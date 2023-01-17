@@ -3,12 +3,17 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+  let = array = ['Jose', 'Raulito', 'Don Rouge', 'Milton Casco'];
+
+  return array[3];
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  var = array = ['Jose', 'Raulito', 'Don Rouge', 'Milton Casco'];
+  return (array[array.length - 1]); 
 }
 
 
