@@ -3,18 +3,24 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+  var array = ["Jorge", "Milton", "Joaquin", "Raulito"]
+  return array[0];
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  var array = ["Jorge", "Milton", "Joaquin", "Raulito"]
+  return array[3];
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+  var array = ["Jorge", "Milton", "Joaquin", "Raulito"]
+  return (array.length);
 }
 
 
@@ -23,6 +29,10 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  var nuevoArray = ["Jorge", "Milton", "Joaquin", "Raulito"]
+  for (var i = 0; i < array.length; i++){
+    nuevoArray[i] = array[i] + 1;
+  }
 }
 
 
