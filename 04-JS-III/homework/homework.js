@@ -29,10 +29,13 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  var nuevoArray = ["Jorge", "Milton", "Joaquin", "Raulito"]
-  for (var i = 0; i < array.length; i++){
+  var nuevoArray = [1,2,3,4];
+  for(var i = 0; i < array.length; i++) {
     nuevoArray[i] = array[i] + 1;
   }
+
+  return array + 1;
+
 }
 
 
