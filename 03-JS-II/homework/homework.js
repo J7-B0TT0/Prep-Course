@@ -8,8 +8,11 @@ function obtenerMayor(x, y) {
   if (x > y) {
     return x;
   }
+  else if (y > x) {
+    return y;
+  }
   else (x === y);{
-    return x, y;
+    return x || y;
   }
 }
 
@@ -96,6 +99,8 @@ function esDiezOCinco(numero) {
 
   }
 }
+
+
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
@@ -220,20 +225,25 @@ function tieneTresDigitos(numero){
   }
 }
 
+
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
   var a = numero;
   var i = 0;
-  
   do {
     i = i + 1;
     a = a + 5;
   }
-  while (i < 8);
+  while(i < 8);
   return a;
 }
+
+
+
+
+
 
 
 // No modificar nada debajo de esta línea
