@@ -77,6 +77,7 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+  var elemento = 'Tengo el  pito largo';
   for (var i = 0; i < array.length; i++ ) {
     if (array[i] === elemento) {
       return true;
@@ -93,15 +94,12 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
-  var suma = 0;
-  var long = numeros.length;
+  var enteros = 0;
 
-  for (var i = 0; i < long; i++) {
-    suma = suma + numeros[i];
-
+  for (var i = 0; i < numeros.length; i++) {
+    enteros = enteros + numeros[i];
   }
-
-  return suma;
+  return enteros;
 }
 
 
@@ -110,13 +108,12 @@ function promedioResultadosTest(resultadosTest) {
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
   var promedio = [];
-  var a = resultadosTest.length;
+  var l = resultadosTest.length;
 
-  for (var i = 0; i < a; i++) {
-    promedio = agregarNumeros(resultadosTest) / a;
 
+  for(var i = 0; i < l; i++) {
+    promedio = agregarNumeros(resultadosTest) / l;
   }
-
   return promedio;
 }
 
@@ -143,14 +140,32 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
-  
+  if (arguments.length < 1){
+    return 0;
+  }
+
+  var total = 1;
+
+  for(var i = 0; i < arguments.length; i++) {
+    total = total * arguments[i];
+  }
+  return total;
+
 }
 
 
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
+  var contador = 0;
+  var l = arreglo.length;
 
+  for ( var i = 0; i < l; i++) {
+    if (arreglo[i] >= 19) {
+      contador++
+    }
+  }
+  return contador;
 }
 
 
