@@ -5,7 +5,7 @@ function devolverPrimerElemento(array) {
   // Tu código:
   var array = ['Martin', 'Jose', 'Juan', 'Pedro'];
 
-  return (array[0]);
+  return array[0];
 }
 
 
