@@ -237,13 +237,15 @@ function mayorACien(array) {
   var nuevoArray = [];
 
   for(let i = 0; i < array.length; i++){
-   if  (array[i] > 0 && array[i] < 201 ) {
-    nuevoArray.push(array[i] > 100)
-    return array;
+
+   if  (array[i] > 100 && array[i] < 201) {
+    nuevoArray.push(array[i])
    }
   
   else {return 'No esta en rango'};
   }
+
+  return nuevoArray;
 
 }
 
@@ -256,6 +258,19 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+  var nuevoArray = [];
+  var suma = numero;
+
+  for(var i = 0; i < 10 ; i++ ) {
+    suma = suma + 2;
+    if(suma === i) break;
+    else { nuevoArray.push(suma) }
+  }
+  
+  if(i < 10) { return 'Se interrumpio la ejecucion'}
+  
+  else { return nuevoArray}
+
 }
 
 
