@@ -268,7 +268,7 @@ function breakStatement(numero) {
     array.push(valorSuma);
   }
 
-  if(i < 10) return 'Se interrumpio la  ejecucion';
+  if(i < 10) return 'Se interrumpio la ejecucion';
 
   return array;
 
