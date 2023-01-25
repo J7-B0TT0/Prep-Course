@@ -257,15 +257,20 @@ function breakStatement(numero) {
   var nuevoArray = [];
   var suma = numero;
 
-  for(var i = 0; i < 10 ; i++ ) {
+  for(var i = 1; i <= 10; i++) {
+    
     suma = suma + 2;
-    if(suma === i) break;
-    else { nuevoArray.push(suma) }
+    
+    if(suma === i){
+      break;
+    }
+
+    nuevoArray.push(suma);
   }
-  
-  if(i < 10) { return 'Se interrumpio la ejecucion'}
-  
-  else { return nuevoArray }
+
+  if (i < 10) return 'Se interrumpio la  ejecucion';
+
+  return newArray;
 
 }
 
