@@ -144,7 +144,7 @@ function elevarAlCuadrado(num) {
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  return Math.pow(num, 3);
+  return num * num * num;
 }
 
 function elevar(num, exponent) {
@@ -186,9 +186,21 @@ if (numero < 0){
 else (numero === 0); {
   return false;
 }
+
+function agregarSimboloExclamacion(str) {
+  // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
+  // Ejemplo: "hello world" pasaría a ser "hello world!"
+  // Tu código:
+  return str + '!';
+}
+
+function combinarNombres(nombre, apellido) {
+  // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  return "nombre" + " apellido";
+  var combinado = nombre + ' ' + apellido;
+  return combinado;
+}
 
 
 function obtenerSaludo(nombre) {
@@ -215,7 +227,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-return base * altura;
+return (base * altura)/2;
 }
 
 

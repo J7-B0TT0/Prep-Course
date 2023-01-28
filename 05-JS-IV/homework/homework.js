@@ -6,9 +6,22 @@ function crearGato (nombre, edad) {
   // Agrega un método (funcion) llamado "meow" que devuelva el string "Meow!"
   // Devuelve el objeto
   // Tu código:
+<<<<<<< HEAD
    var obj = {
     condition: "bd broder"
    }
+=======
+  const newObj = {
+
+    nombre : 'Michi',
+    edad : '17',
+    meow : function() {
+      return 'Meow!';
+    }
+  };
+
+  return newObj;
+>>>>>>> abc24dbdd3603905624e2b9890f0684989888ea4
 }
 
 function agregarPropiedad (objeto, property) {
@@ -16,6 +29,10 @@ function agregarPropiedad (objeto, property) {
   // Devuelve el objeto
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
+
+  objeto[property] = null;
+  return objeto;
+
 }
 
 function invocarMetodo (objeto, metodo) {
@@ -23,6 +40,13 @@ function invocarMetodo (objeto, metodo) {
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
   // Tu código:
+  const objeto  = {
+    metodo : function() {
+      consolge.log('Hello world');
+    }
+  }
+ 
+  objeto.metodo();
 }
 
 function multiplicarNumeroDesconocidoPorCinco (objetoMisterioso) {
@@ -37,19 +61,33 @@ function eliminarPropiedad (objeto, unaPropiedad) {
   // tip: tenes que usar bracket notation
   // Devuelve el objeto
   // Tu código:
+
+  delete objeto[unaPropiedad];
+  return objeto;
 }
 
 function nuevoUsuario (nombre, email, password) {
   // Crea un nuevo objeto con las propiedades coincidiendo con los argumentos que se pasan a la función
   // Devuelve el objeto
   // Tu código:
+    var joaBotto = {
+    nombre: nombre,
+    email: email,
+    password: password
+  };
 
+  return joaBotto;
 }
 
 function tieneEmail (usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contrario, devuelve "false"
   // Tu código:
+  
+  if(usuario['email']) {
+    return true;
+  }
+  else {return false};
 }
 
 function tienePropiedad (objeto, propiedad) {
@@ -57,6 +95,20 @@ function tienePropiedad (objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
+  var objeto = {
+    propiedad: 'propiedad',
+
+  };
+
+  if (objeto[propiedad]) {
+    return true;
+  }
+
+  else {
+    return false;
+  }
+
+  
 }
 
 function verificarPassword (usuario, password) {
@@ -64,12 +116,22 @@ function verificarPassword (usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // Tu código:
+  var usuario = {
+    password: 'password'
+  }
+  if(usuario['password'] === password){
+    return true;
+  }
+  else {
+    return false;
+  }
 }
 
 function actualizarPassword (usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevaPassword"
   // Devuelve el objeto
   // Tu código:
+  
 }
 
 function agregarAmigo (usuario, nuevoAmigo) {
