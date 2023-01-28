@@ -29,14 +29,15 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  let  container = [];
-  let a = array.length;
+let container = [];
+let B = array.length;
 
-  for ( let i = 0; i < a; i++ ) {
-    array[i] = array[i] + 1;
-    container.push(array[i]);
-  }
-  return container;
+for (i = 0; i < B ; i++){
+  array[i] = array[i] + 1;
+  container.push(array[i]);
+
+}
+return container;
 }
 
 
@@ -44,6 +45,16 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+let container = [];
+let B = array.length;
+
+for (i = 0; i < B ; i++){
+
+  array[i] = array.push(array[i]);
+  container.push(array[i]);
+
+}
+return container;
 }
 
 
