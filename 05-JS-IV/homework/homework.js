@@ -8,8 +8,8 @@ function crearGato (nombre, edad) {
   // Tu código:
   const newObj = {
 
-    nombre : 'Michi',
-    edad : '17',
+    nombre : 'nombre',
+    edad : 'edad',
     meow : function() {
       return 'Meow!';
     }
@@ -34,12 +34,7 @@ function invocarMetodo (objeto, metodo) {
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
   // Tu código:
-  var objeto = {
-    metodo: function(){
-      //Esto es un metodo.
-    }
-  }
-  objeto.metodo();
+  objeto[metodo]();
   
 }
 
@@ -91,19 +86,13 @@ function tienePropiedad (objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
-  var objeto = {
-    propiedad: 'propiedad',
-
-  };
-
   if (objeto[propiedad]) {
-    return true;
+    return objeto.hasOwnProperty(propiedad);
   }
 
   else {
     return false;
   }
-
   
 }
 
@@ -112,9 +101,6 @@ function verificarPassword (usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // Tu código:
-  var usuario = {
-    password: 'password'
-  }
   if(usuario['password'] === password){
     return true;
   }
@@ -136,6 +122,8 @@ function agregarAmigo (usuario, nuevoAmigo) {
   // Agrega "nuevoAmigo" al final de ese array
   // Devuelve el objeto "usuario"
   // Tu código:
+  usuario.amigos.push(nuevoAmigo);
+  return usuario;
 }
 
 function pasarUsuarioAPremium (usuarios) {
@@ -144,6 +132,10 @@ function pasarUsuarioAPremium (usuarios) {
   // Define cada propiedad "esPremium" de cada objeto como "true"
   // Devuelve el array de usuarios
   // Tu código:
+  for (var i = 0; i < usuarios.length; i++){
+    usuarios[i].esPremium = true;
+  }
+  return usuarios;
 }
 
 function sumarLikesDeUsuario (usuario) {
@@ -153,6 +145,20 @@ function sumarLikesDeUsuario (usuario) {
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
   // Tu código:
+
+  var usuario = {
+     posts: [
+      {likes: 4},
+      {likes:23},
+      {likes:34},
+    ]
+   };
+  var suma = 0;
+  for (var i = 0; i <usuario.length; i++ ){
+    suma = usuario.posts[i].likes;
+    
+  }
+  return suma;
 }
 
 function agregarMetodoCalculoDescuento (producto) {
