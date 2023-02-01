@@ -1,7 +1,7 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = "Hola, soy joaquin";
+const nuevaString = 'Hola, soy joaquin';
 
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 27;
@@ -60,12 +60,12 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (x = y){
+  if (x === y ) {
+    
     return true;
+
   }
-  else {
-    return false;
-  }
+  else {return false};
 }
 
 function tienenMismaLongitud(str1, str2) {
