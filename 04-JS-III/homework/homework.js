@@ -3,8 +3,6 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
-  var array = ['Martin', 'Jose', 'Juan', 'Pedro'];
-
   return array[0];
 }
 
@@ -12,8 +10,6 @@ function devolverPrimerElemento(array) {
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-  var array = ['Jose', 'Raulito', 'Don Rouge', 'Milton Casco'];
- 
   return array[array.length - 1]; 
 }
 
@@ -21,7 +17,6 @@ function devolverUltimoElemento(array) {
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
-  var array = ["Jorge", "Milton", "Joaquin", "Raulito", 'Matias'];
   return (array.length);
 }
 
@@ -31,17 +26,6 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-<<<<<<< HEAD
-let container = [];
-let B = array.length;
-
-for (i = 0; i < B ; i++){
-  array[i] = array[i] + 1;
-  container.push(array[i]);
-
-}
-return container;
-=======
   var matriz = [];
   var a = array.length;
 
@@ -49,7 +33,6 @@ return container;
     matriz[i] = array[i] + 1;
   }
   return matriz;
->>>>>>> abc24dbdd3603905624e2b9890f0684989888ea4
 }
 
 
@@ -57,22 +40,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-<<<<<<< HEAD
-let container = [];
-let B = array.length;
-
-for (i = 0; i < B ; i++){
-
-  array[i] = array.push(array[i]);
-  container.push(array[i]);
-
-}
-return container;
-=======
-  array.push(elemento)
-
+  array.push(elemento);
   return array;
->>>>>>> abc24dbdd3603905624e2b9890f0684989888ea4
 }
 
 
@@ -164,21 +133,13 @@ function multiplicarArgumentos() {
   if (arguments.length < 1){
     return 0;
   }
-<<<<<<< HEAD
-  var total = 1;
-=======
 
   var total = 1;
 
->>>>>>> 8959325a283533065727f215d2f2624fd9088a23
   for(var i = 0; i < arguments.length; i++) {
     total = total * arguments[i];
   }
   return total;
-<<<<<<< HEAD
-=======
-
->>>>>>> 8959325a283533065727f215d2f2624fd9088a23
 }
 
 
@@ -187,14 +148,9 @@ function cuentoElementos(arreglo){
   //Escribe tu código aquí
   var contador = 0;
   var l = arreglo.length;
-<<<<<<< HEAD
-  for ( var i = 0; i < l; i++) {
-    if (arreglo[i] >= 18) {
-=======
 
   for ( var i = 0; i < l; i++) {
     if (arreglo[i] >= 19) {
->>>>>>> 8959325a283533065727f215d2f2624fd9088a23
       contador++
     }
   }
@@ -206,16 +162,10 @@ function diaDeLaSemana(numeroDeDia) {
   //Suponga que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente. 
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
-<<<<<<< HEAD
-  //Escribe tu código aquí   
-  if (numeroDeDia === 1 || numeroDeDia === 7){return 'Es fin de semana'}
-  else return 'Es dia laboral';
-=======
   //Escribe tu código aquí 
   if (numeroDeDia === 1 || numeroDeDia === 7){return 'Es fin de semana'}
   else return 'Es dia laboral';
 
->>>>>>> 8959325a283533065727f215d2f2624fd9088a23
 } 
 
 
@@ -258,21 +208,13 @@ function mesesDelAño(array) {
       return array;
     }
   }
-<<<<<<< HEAD
-=======
-
->>>>>>> 8959325a283533065727f215d2f2624fd9088a23
   
   if (nuevoArray.length < 3){
     return 'No se encontraron los meses solicitados'
   }
-<<<<<<< HEAD
-  else {return nuevoArray}
-=======
 
   else {return nuevoArray}
 
->>>>>>> 8959325a283533065727f215d2f2624fd9088a23
 }
 
 
@@ -281,26 +223,18 @@ function mayorACien(array) {
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
   var nuevoArray = [];
-<<<<<<< HEAD
-  for(let i = 0; i < array.length; i++){
-=======
 
   for(let i = 0; i < array.length; i++){
 
->>>>>>> 8959325a283533065727f215d2f2624fd9088a23
    if  (array[i] > 100 && array[i] < 201) {
     nuevoArray.push(array[i])
    }
   
   else {return 'No esta en rango'};
   }
-<<<<<<< HEAD
-  return nuevoArray;
-=======
 
   return nuevoArray;
 
->>>>>>> 8959325a283533065727f215d2f2624fd9088a23
 }
 
 
@@ -312,19 +246,6 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
-<<<<<<< HEAD
-  var nuevoArray = [];
-  var suma = numero;
-  for(var i = 0; i < 10 ; i++ ) {
-    suma = suma + 2;
-    if(suma === i) break;
-    else { nuevoArray.push(suma) }
-  }
-  
-  if(i < 10) { return 'Se interrumpio la ejecucion'}
-  
-  else { return nuevoArray }
-=======
   var array = [];
   var valorSuma = numero;
 
@@ -343,7 +264,6 @@ function breakStatement(numero) {
 
   return array;
 
->>>>>>> 8959325a283533065727f215d2f2624fd9088a23
 }
 
 
@@ -355,18 +275,6 @@ function continueStatement(numero) {
   //Pista: usá el statement 'continue'
   // Tu código:
   var nuevoArray = [];
-<<<<<<< HEAD
-  suma = numero;
-  for (var i = 1; i < 11; i++) {
-
-    if (i == 5){
-      return 'Se interrumpio la ejecucion';
-      
-    }
-
-   
-  }
-=======
   var suma = numero;
 
   for(var i = 0; i < 10; i++) {
@@ -378,7 +286,6 @@ function continueStatement(numero) {
   }
   return nuevoArray;
 
->>>>>>> 8959325a283533065727f215d2f2624fd9088a23
 }
 
 
