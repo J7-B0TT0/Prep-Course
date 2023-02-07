@@ -66,15 +66,15 @@ function dePalabrasAFrase(palabras) {
 }
 
 
-function arrayContiene(array, elemento) {
+function arrayContiene(array, item) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-  var array = [];
-  for(let i = 0; i<array.length; i++){
-    array[i] !== elemento[i];
+  
+  if( array.indexOf(item)=== -1){
     return false;
   }
+  return true;
 }
 
 
@@ -83,9 +83,8 @@ function agregarNumeros(numeros) {
   // Suma todos los enteros y devuelve el valor
   // Tu código:
   var enteros = 0;
-
   for (var i = 0; i < numeros.length; i++) {
-    enteros = enteros + numeros[i];
+    enteros = numeros[i] + enteros;
   }
   return enteros;
 }
@@ -162,7 +161,7 @@ function diaDeLaSemana(numeroDeDia) {
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí 
   if (numeroDeDia === 1 || numeroDeDia === 7){return 'Es fin de semana'}
-  else return 'Es dia laboral';
+  else return 'Es dia Laboral';
 
 } 
 
@@ -197,21 +196,20 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-  var a = array.length;
   var nuevoArray = [];
-  for (let i = 0; i < a; i++) {
+
+  for ( let i = 0; i < array.length; i++){
     
-    if (array[i] === 'Enero' || array[i] === 'Noviembre' || array[i] === 'Marzo' ) {
+    if(array[i] === 'Enero' || array[i] === 'Noviembre' || array[i] === 'Marzo'){
       nuevoArray.push(array[i]);
-      return array;
     }
   }
-  
   if (nuevoArray.length < 3){
-    return 'No se encontraron los meses solicitados'
+    return 'No se encontraron los meses pedidos';
   }
-
-  else {return nuevoArray}
+  else {
+    return nuevoArray;
+  }
 
 }
 
@@ -224,15 +222,12 @@ function mayorACien(array) {
 
   for(let i = 0; i < array.length; i++){
 
-   if  (array[i] > 100 && array[i] < 201) {
-    nuevoArray.push(array[i])
+   if  (array[i] > 100 ) {
+    nuevoArray.push(array[i]);
    }
   
-  else {return 'No esta en rango'};
   }
-
   return nuevoArray;
-
 }
 
 
@@ -244,25 +239,24 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
-  var array = [];
-  var valorSuma = numero;
+  var newArr = [];
 
-  for (var i = 1; i <= 10; i++) {
-    
-    valorSuma = valorSuma + 2;
-    
-    if(valorSuma === i){
-      break;
+  for(var i = 0; i<10; i++){
+    numero = numero + 2;
+    if( numero === i)break;
+
+    else {
+        newArr.push(numero);
+      }
     }
-
-    array.push(valorSuma);
+    if(i <10){
+      return 'Se interrumpió la ejecución';
+    }
+    else {
+      return newArr;
+    }
   }
 
-  if(i < 10) return 'Se interrumpio la ejecucion';
-
-  return array;
-
-}
 
 
 function continueStatement(numero) {
@@ -272,19 +266,22 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
-  var nuevoArray = [];
-  var suma = numero;
+  
+  var newArr = [];
+  
+  for(var i = 0; i<10; i++){
 
-  for(var i = 0; i < 10; i++) {
-    suma = suma + 2;
-    if (i === 5) continue;
+    if( i === 5)continue;
+
     else {
-      nuevoArray.push(suma)
-      suma = suma + 2;}
-  }
-  return nuevoArray;
+      numero = numero + 2;
+      newArr.push(numero);
+      }
+    }
 
-}
+      return newArr;
+    
+  }
 
 
 // No modificar nada debajo de esta línea
