@@ -26,13 +26,12 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  var matriz = [];
-  var a = array.length;
+  let nuevoArray = [];
 
-  for (var i = 0; i < a; i++) {
-    matriz[i] = array[i] + 1;
+  for ( let i = 0; i <array.length; i++){
+    nuevoArray[i] = array[i] + 1;
   }
-  return matriz;
+  return nuevoArray;
 }
 
 
@@ -71,12 +70,11 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-  for (var i = 0; i < array.length; i++ ) {
-    if (array[i] === elemento) {
-      return true;
-    }
+  var array = [];
+  for(let i = 0; i<array.length; i++){
+    array[i] !== elemento[i];
+    return false;
   }
-  return false;
 }
 
 
