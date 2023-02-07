@@ -1,5 +1,7 @@
 // No cambies los nombres de las funciones.
 
+const { resetTask } = require("simple-git/src/lib/tasks/reset");
+
 function crearGato (nombre, edad) {
   // Crear un nuevo objeto con la propiedad "nombre" y el valor definido como el argumento "nombre".
   // Agrega una propiedad al objeto con el nombre "edad" y usa el valor definido en el argumento "edad"
@@ -8,8 +10,8 @@ function crearGato (nombre, edad) {
   // Tu código:
   const newObj = {
 
-    nombre : 'nombre',
-    edad : 'edad',
+    nombre : nombre,
+    edad : edad,
     meow : function() {
       return 'Meow!';
     }
@@ -145,20 +147,9 @@ function sumarLikesDeUsuario (usuario) {
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
   // Tu código:
-
-  var usuario = {
-     posts: [
-      post = {likes: 4},
-      post = {likes:23},
-      post = {likes:34},
-    ]
-   };
-  
-   var suma = 0;
-  
-   for (var i = 0; i <usuario.posts.length; i++ ){
-    suma = suma + usuario.posts[i].post.likes;
-    
+  let suma= 0;
+  for( var i = 0; i < usuario.posts.length; i++){
+    suma += usuario.posts[i].likes;
   }
   return suma;
 }
@@ -174,14 +165,15 @@ function agregarMetodoCalculoDescuento (producto) {
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
   var producto = {
-    precio: 20,
-    procentajeDescuento: 0.5,
+    precio: 250 ,
+    porcentajeDeDescuento: 0.2 ,
     calcularPrecioDescuento: function() {
-      producto = precio - porcentajeDescuento;
+    oper = producto.porcentajeDeDescuento * producto.precio ;
+    result = producto.precio - oper;
+
     }
   }
-
-  return producto.calcularPrecioDescuento();
+  return producto;
 }
 
 // No modificar nada debajo de esta línea
