@@ -98,7 +98,7 @@ const productos = numeros.reduce(multiplicarDosNumeros);
 // En este ejemplo configuramos un acumulador de arranque
 const frases = palabras.reduce(function (acc, elemento) {
   return acc + " " + elemento;
-}, "Frase completa:");
+}, "Frase completa:" );
 
 console.log(suma); // 45
 console.log(productos); // 362880
