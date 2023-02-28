@@ -26,8 +26,8 @@ function agregarMetodoPrototype(Constructor) {
   // Agrega un método al Constructor del `prototype`
   // El método debe llamarse "saludar" y debe devolver la string "Hello World!"
   // Tu código:
-  
-  Constructor.prototype.saludar = function(){
+
+  Constructor.prototype.saludar = function (){
     return 'Hello World!';
   }
 }
@@ -58,26 +58,25 @@ function agregarStringInvertida() {
     //   Domicilio: 'Saavedra 123'
     //  }
 
-  class Persona {
-    constructor(nombre, apellido, edad, domicilio) {
-      // Crea el constructor:
-      this.nombre = nombre;
-      this.apellido = apellido;
-      this.edad = edad;
-      this.domicilio = domicilio;
+  function Persona(nombre, apellido, edad, domicilio) {
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.edad = edad;
+    this.domicilio = domicilio;   
+    Persona.prototype.detalle = function(){
+      return Persona;
     }
-}
+  }
 
-Persona.prototype.detalle = function(){
-  return Persona;
-}
 
-function crearInstanciaPersona(nombre, apellido, edad, dir) {
+
+function crearInstanciaPersona(nombre, apellido, edad, domicilio) {
   //Con esta función vamos a crear una nueva persona a partir de nuestro constructor de persona (creado en el ejercicio anterior)
   //Recibirá los valores "Juan", "Perez", 22, "Saavedra 123" para sus respectivas propiedades
   //Devolver la nueva persona creada
-  var nuevaPersona = new Persona ('Juan', 'Perez', '22', 'Saavedra 123');
+  var nuevaPersona = new Persona ('Juan', 'Perez', 22, 'Saavedra 123')
   return nuevaPersona;
+
 }
   
 function agregarMetodo() {
