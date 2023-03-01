@@ -1,0 +1,5 @@
+Callbacks:
+
+Las 'Devoluciones de llamada' otorgan la capacidad de pasar una funcion como argumento a otra funcion.
+Podemos llamarlas en cualquier momento y podemos tambien pasarle argumentos dentro de la funcion.
+Se tipean pasando 'cb' como argumento en la variable donde se quiere utilizar.
