@@ -5,6 +5,8 @@ function deObjetoAmatriz(objeto){
   // un par clave-valor en forma de matriz.
   //Ejemplo: 
   /*objeto({
+
+    
       D: 1,
       B: 2,
       C: 3
